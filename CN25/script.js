@@ -4,7 +4,7 @@ let teamOneName = "Kido";
 let teamTwoName = "Google";
 
 let scoreOne = 0;
-let scoreTwo = 0;
+let scoreTwo = 3;
 
 let freeThrow = 1;
 let twoPointShot = 2;
