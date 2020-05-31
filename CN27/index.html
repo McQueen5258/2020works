@@ -1,1 +1,32 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KIDO BANK</title>
+        <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <div class="bankName">KIDO BANK</div>
+        <div class="ledger">
+            <div class="heading">
+                <p>姓名：</p>
+                <p>存入蚪币数：</p>
+            </div>
+            <div class="records"></div>
+        </div>
+        <div class="heading">
+            <p class="number">交易笔数:<span class="jiaoYiBiShu"></span></p>
+            <p class="total">存款总额:<span class="cunKuanZongE"></span></p>
+        </div>
+        <div class="inputs">
+            <div>姓名:<input class="accountName"></div>
+            <div>财富:<input class="accountDeposit">蚪币 </div>
+        </div>
+        <div class="buttonDiv">
+            <button class="newDeposit">新存款</button>
+            <button class="update">最近的一笔交易</button>
+        </div>
+        <script src="jquery-1.9.1.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
