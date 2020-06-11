@@ -5,10 +5,18 @@ body {
     font-weight: 400;
 }
 
+.biaoTi{
+    display: flex;
+    justify-content: center;
+}
+
 h2 {
     font-weight: 300;
     font-size: 28px;
-    text-align: center;
+}
+h6{
+    margin-top: 40px;
+    margin-left: 1px;
 }
 
 .movieSelection {
