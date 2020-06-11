@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+  <title>科蚪卖票</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+  <div class="movieSelection">
+    <h2>科蚪票务系统</h2>
+    <div class="movies">
+      <img class="movie" id="Sonic" src="p2542241157.jpg" />
+      <img class="movie" id="Mulan" src="WechatIMG18.jpeg" />
+      <img class="movie" id="spiesInDisguise" src="WechatIMG19.jpeg" />
+      <img class="movie" id="Bridges" src="WechatIMG17.jpeg" />
+    </div>
+    <div class="reviews">
+      <div class="movieReviews">
+        <p>点击电影，阅读观众评论！</p>
+      </div>
+      <div class="movieIntroduction">
+      </div>
+      <div class="jianJie">
+        <button class="jianJieButtonAndpingLunButton">电影简介</button>
+      </div>
+    </div>
+  </div>
+    <div class="xiaBanBuFen">
+    <div class="ticketSelection">
+      <h2>选择您的门票：</h2>
+      <p class="movieChoice">
+        输入您要购买的门票数量。<br />儿童票为8元，成人票为12元。
+      </p>
+      <div class="tickets">
+        <div class="ticket">
+          <p>儿童：</p>
+          <input type="number" class="ticketInput numberChild" value="0" />
+        </div>
+        <div class="ticket">
+          <p>成人：</p>
+          <input type="number" class="ticketInput numberAdult" value="0" />
+        </div>
+      </div>
+    </div>
+    <div class="checkout">
+      <h2>结账：</h2>
+      <p>准备好购买门票了吗？</p>
+      <button class="calculateTotal">计算总数</button>
+      <div class="totalCost"></div>
+      <button class="buy">购买</button>
+    </div>
+  </div>
+  <script src="jquery-1.9.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
