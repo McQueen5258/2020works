@@ -41,13 +41,11 @@ $("img").click(function () {
 $(".jianJieButtonAndpingLunButton").click(function(){
   let zhuangTai = $(this).attr("id")
   if (zhuangTai === "jianJieButton") {
-    $(this).removeAttr("id");
     $(".movieReviews").hide();
     $(".movieIntroduction").show();
     $(this).attr("id","pingLunButton");
     $(this).text("电影评论");
   }else{
-    $(this).removeAttr("id");
     $(".movieIntroduction").hide();
     $(".movieReviews").show();
     $(this).attr("id","jianJieButton");
