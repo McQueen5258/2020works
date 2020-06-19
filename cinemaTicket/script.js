@@ -59,7 +59,6 @@ $(".jianJieButtonAndpingLunButton").click(function(){
 $(".calculateTotal").click(function () {
   let numberChild = $(".numberChild").val();
   let numberAdult = $(".numberAdult").val();
-
   let cost = costCalculation(numberChild, numberAdult);
   warning(cost);
 });
@@ -116,11 +115,15 @@ function filmIntroduction(poster){
 
 // 会计算用户输入的成人票和儿童票的总费用(中涵)
 function costCalculation(numberChild, numberAdult) {
-
-  let cost = numberChild * 8 + numberAdult * 12;
-
-  return cost;
+  if (numberChild < 0 || numberAdult < 0) {
+    alert("您输入的门票数量不能有负数")
+  } else {
+    let cost = numberChild * 8 + numberAdult * 12;
+    return cost;
+  }
 }
+
+
 
 // 会根据计算的结果，显示信息(雨城)
 function warning(cost) {
