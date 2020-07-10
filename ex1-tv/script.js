@@ -7,7 +7,9 @@ $("button").click(function () {
       return response.json();
     })
     .then(function (data) {
-      let pic_url = data[1].show.image.medium;
+      for(let i=0;i<3;i++){
+      let pic_url = data[i].show.image.medium;
       $("body").append(`<img src='${pic_url}'>`);
+      }
     });
 });
