@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度一下，你就知道</title>
+    <style>
+        main{
+            text-align: center;
+        }
+        footer{
+            position: absolute;
+            bottom: 0;
+        }
+
+        .personal{
+            float: right;
+        }
+        
+        .logo{
+            width: 300px;
+        }
+        
+        .specialTitle{
+            margin-top: 30px;
+        }
+
+        .specialTitle span{
+            margin: 0 270px 0 280px;
+            font-size: 15px;
+            
+        }
+        .setting{
+            position: relative;
+        }
+        .settingMenu{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 50px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.555);
+            padding: 12px 16px;
+            right: -30px;
+            top: 16px;
+            border-radius: 10px;
+        }
+
+        .settingMenu div{
+            margin: 6px 0 6px 0;
+        }
+
+        .setting:hover .settingMenu {
+            display: block;
+			}
+        .huan{
+            opacity: 0.5;
+        }
+
+        .news{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+        }
+        a{
+            text-decoration:none;
+            color: #000;
+        }
+        a:hover{
+            color: #3176ff;
+        }
+        a:hover,.reSou:hover,.huan:hover,button:hover{
+            cursor:pointer;
+
+        }
+        .news .new-column div{
+            margin: 20px;
+        }
+        .specialBox{
+            margin: 20px;
+
+        }
+        .new-column{
+            text-align: left;
+            margin: 0 10px;
+        }
+
+        span a{
+            margin: 20px;
+            font-size: 10px;
+            opacity: 0.7;
+        }
+        input{
+            width: 500px;
+            height: 30px;
+            margin: 0px;
+            border-bottom-left-radius:10px;
+            border-top-left-radius: 10px;
+            border:3px solid #3176ff;
+            outline:none;
+            border-right: none;
+        }
+
+        button{
+            height: 38px;
+            width: 100px;
+            margin-left: -6px;
+            border-bottom-right-radius:10px;
+            border-top-right-radius: 10px;
+            background-color: #3176ff;
+            border:3px solid #3176ff;
+            color: white;
+            outline:none;
+        }
+        button:hover{
+            background-color: #235ac9;
+            border:3px solid #235ac9;
+        }
+        .dengLu{
+            background-color: #3176ff;
+            padding: 1px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <span>
+        <a>新闻</a>
+        <a>hao123</a>
+        <a>地图</a>
+        <a>视频</a>
+        <a>贴吧</a>
+        <a>学术</a>
+        <a>更多</a>
+    </span>
+    <span class="personal">
+          <a>高考加油</a>  
+        <a class="setting">
+            设置
+            <div class="settingMenu">
+                <div>搜索设置</div>
+                <div>高级设置</div>
+                <div>隐私设置</div>
+                <div>关闭热榜</div>
+            </div>
+
+        </a>
+        <a class="dengLu">登陆</a>
+    </span>
+    </nav>
+    <main>
+        <div class="logoBox">
+            <img class="logo" src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png">
+            <div class="inputBox">
+                <input type="text">
+                <button>百度一下</button>
+            </div>
+        </div>
+        <div class="specialBox">
+            <div class="specialTitle">
+                <span class="reSou">百度热搜</span>
+                <span class="huan">换一换</span>
+            </div>
+
+            <div class="news">
+                <div class="new-column">
+                    <div>1 <a href=""> 年款国行27吋iMac开售 起售价14399元</a></div>
+                    <div>2 <a href=""> Zoom在内地仅剩代理 C端份额将大幅萎缩</a></div>
+                    <div>3 <a href=""> 169元 荣耀亲选Earbuds X1真无线耳机上市</a></div>
+                </div>
+                <div class="new-column">
+                    <div>4 <a href=""> 索尼WH-1000XM4发布，终于不用摘下耳机说话了</a></div>
+                    <div>5 <a href=""> 喷涂透明涂层：制造更便宜的智能窗户！</a></div>
+                    <div>6 <a href=""> 中欧班列开行需求旺盛 连续3个月开行超千列</a></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        设为首页
+    </footer>
+</body>
+</html>
